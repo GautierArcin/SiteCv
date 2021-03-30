@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 const Index = (): JSX.Element => {
@@ -13,6 +13,8 @@ const Index = (): JSX.Element => {
          <Link href="/PilaSuce">CLIQUE SALOPE</Link>
          {/* ça pa bien */}
          <a href="/PilaSuce">Swissex aussi</a>
+         <br />
+         Mais pas Ben
       </div>
    );
 };
