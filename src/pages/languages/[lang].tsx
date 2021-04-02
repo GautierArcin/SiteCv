@@ -1,12 +1,8 @@
-import { langPaths, langProps } from '@/lib/lang';
+import { langPaths, langProps, LangPropsType } from '@/lib/lang';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ParsedUrlQuery } from 'querystring';
 
-type LangProps = {
-   title: string;
-};
-
-const Lang = (props: LangProps): JSX.Element => {
+const Lang = (props: LangPropsType): JSX.Element => {
    return (
       <div>
          <h1>{props.title}</h1>
@@ -31,7 +27,7 @@ export const getStaticPaths: GetStaticPaths<PathsProps> = async () => {
    };
 };
 
-export const getStaticProps: GetStaticProps<LangProps> = async ({ params }) => {
+export const getStaticProps: GetStaticProps<LangPropsType> = async ({ params }) => {
    const lang = params ? (String(params.lang) as 'en' | 'fr' | 'ja') : 'en';
    const props = langProps(lang) || { title: 'mdr' };
 
