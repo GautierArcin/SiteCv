@@ -1,11 +1,11 @@
 import { useRouter } from 'next/router';
 // import Link from 'next/link';
 
-const Index = (): JSX.Element => {
+const CV = (): JSX.Element => {
    const router = useRouter();
    // console.log(router.query);
 
-   // const currentLocal = router.locale;
+   //    const currentLocal = router.locale;
    return (
       <div>
          Current locale = {router.locale}
@@ -17,4 +17,4 @@ const Index = (): JSX.Element => {
    );
 };
 
-export default Index;
+export default CV;

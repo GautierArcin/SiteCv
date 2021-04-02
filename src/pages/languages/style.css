@@ -1,0 +1,8 @@
+.app {
+   opacity: 0;
+}
+
+.app.change {
+   opacity: 1;
+   transition: all 1s;
+}
