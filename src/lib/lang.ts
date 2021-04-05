@@ -2,7 +2,7 @@ export type LangPropsType = {
    title: string;
 };
 
-export const langPaths = (): [string, string, string] => {
+export const langPaths = (): string[] => {
    return ['en', 'fr', 'ja'];
 };
 
