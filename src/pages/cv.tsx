@@ -20,7 +20,7 @@ const CV = (): JSX.Element => {
    //    const styleVisible =
    //    const currentLocal = router.locale;
    return (
-      <div className={styles.test} style={{ background: 'rgb(33, 150, 243)' }}>
+      <div className={styles.test} style={{ background: 'rgb(20, 150, 243)' }}>
          <Checkbox
             checked={visible}
             onChange={(event) => setVisible(event.target.checked)}
